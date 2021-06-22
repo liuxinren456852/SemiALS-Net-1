@@ -21,7 +21,7 @@ sys.path.append(os.path.join(ROOT_DIR, 'tf_ops/3d_interpolation'))
 sys.path.append(os.path.join(ROOT_DIR, 'tf_ops/grouping'))
 from tf_interpolate import three_nn, three_interpolate
 import tf_grouping
-import pointconv_util
+import DConv_util
 import tf_util
 
 def weight_net_hidden(xyz, hidden_units, scope, is_training, bn_decay=None, weight_decay = None, activation_fn=tf.nn.relu):

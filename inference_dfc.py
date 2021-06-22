@@ -60,9 +60,9 @@ def parse_args(argv):
         # Don't mess with format of description
         formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--gpu', type=str, default='0', help='GPU to use [default: GPU 0]')
-    parser.add_argument('--model', default='pointconv_context', help='Model name [default: pointnet2_sem_seg]')
+    parser.add_argument('--model', default='dancenet', help='Model name [default: pointnet2_sem_seg]')
     parser.add_argument('--extra-dims', type=int, default=[3,4], nargs='*', help='Extra dims')
-    parser.add_argument('--model_path', default='log_pointconv_ctx',
+    parser.add_argument('--model_path', default='log_dancenet',
                         help='model checkpoint file path [default: log/model.ckpt]')
     parser.add_argument('--num_point', type=int, default=8192, help='Point Number [default: 8192]')
     parser.add_argument('--batch_size', type=int, default=7, help='Batch Size during inference [default: 16]')

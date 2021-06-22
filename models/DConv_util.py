@@ -164,4 +164,3 @@ if __name__=='__main__':
     #import scipy.io as sio 
 
     #sio.savemat('density.mat', dict([('pts', pts), ('density', den)]))
-

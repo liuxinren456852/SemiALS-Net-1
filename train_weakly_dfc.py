@@ -37,7 +37,7 @@ import ProbLabelPropagation as PLP
 parser = argparse.ArgumentParser()
 parser.add_argument('--gpu', type=str, default='0', help='GPU to use [default: GPU 0]')
 parser.add_argument('--gpu_num', type=int, default=1, help='number of GPU to train')
-parser.add_argument('--model', default='GAPH_Net', help='Model name [default: pointnet2_sem_seg]')
+parser.add_argument('--model', default='dancenet', help='Model name [default: pointnet2_sem_seg]')
 parser.add_argument('--data_dir', default='./data/dfc_data/block_pickle_w_mask0.1', help='Path to training dataset directory')
 parser.add_argument('--log_dir', default='log_weak_dfc_dancenet_v0', help='Log dir [default: log/dfc]')
 parser.add_argument('--num_point', type=int, default=8192, help='Point Number [default: 8192]')
